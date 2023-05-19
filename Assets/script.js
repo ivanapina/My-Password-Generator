@@ -49,10 +49,9 @@ console.log(choiceArray)
 
 
 for (var i = 0; i < totalCharacter; i++) {
-      
+    // Adds elements to end of an array
   userArray.push (choiceArray[Math.floor(Math.random() * choiceArray.length)]); 
   }
-
   return userArray.join("") ;
 }
 
