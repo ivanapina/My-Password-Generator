@@ -12,7 +12,7 @@ var numberChoice = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 var specialChoice = ["@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "=", "+"];
 
  
-var resultArray = [];
+var choiceArray = [];
 var userArray = [];
 
 // Setting our browser window questions to meet the criteria
@@ -27,30 +27,30 @@ var specialCharacters = window.confirm ("Do you want special characters in your 
 // If statements for the conditions
 
 if (numbers){
-  resultArray = resultArray.concat(numberChoice);
+  choiceArray = choiceArray.concat(numberChoice);
   
 }
 
 if (uppercases){
-  resultArray = resultArray.concat(uppercaseChoice);
+  choiceArray = choiceArray.concat(uppercaseChoice);
 
 }
 
 if (lowercases){
-  resultArray = resultArray.concat(lowercaseChoice);
+  choiceArray = choiceArray.concat(lowercaseChoice);
 
 }
 
 if (specialCharacters){
-  resultArray = resultArray.concat(specialChoice);
+  choiceArray = choiceArray.concat(specialChoice);
 }
 
-console.log(resultArray)
+console.log(choiceArray)
 
 
 for (var i = 0; i < totalCharacter; i++) {
       
-  userArray.push (resultArray[Math.floor(Math.random() * resultArray.length)]); 
+  userArray.push (choiceArray[Math.floor(Math.random() * choiceArray.length)]); 
   }
 
   return userArray.join("") ;
